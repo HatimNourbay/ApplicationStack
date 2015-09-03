@@ -1,0 +1,6 @@
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\LinkProject\bin\Debug\LinkProject.exe.config
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\LinkProject\bin\Debug\LinkProject.exe
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\LinkProject\bin\Debug\LinkProject.pdb
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\LinkProject\obj\Debug\LinkProject.csprojResolveAssemblyReference.cache
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\LinkProject\obj\Debug\LinkProject.exe
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\LinkProject\obj\Debug\LinkProject.pdb
