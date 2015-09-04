@@ -1,4 +1,4 @@
-﻿using LinkProject;
+﻿using PipeLink;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,15 +20,29 @@ namespace ProjectUser
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, INotifyPropertyChanged, IEventReceiver
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        Receiver pipe = new Receiver();
         public MainWindow()
         {
             InitializeComponent();
 
             //this.WindowStartupLocation = WindowStartupLocation.CenterScreen; //start the window at the centre of the screen
             DataContext = this;
-            EventTunnel.Subscribe(this);
+            pipe.Data += new PipeLink.PipeService.DataIsReady(DataBeingRecieved);
+            if (pipe.ServiceOn() == false)
+                MessageBox.Show(pipe.error.Message);
+
+            label1.Content = "Listening to Pipe: " + pipe.CurrentPipeName + Environment.NewLine;
+        }
+
+        void DataBeingRecieved(int data)
+        {
+            Dispatcher.Invoke(new Action(delegate()
+            {
+                label1.Content += string.Join(Environment.NewLine, data);
+                label1.Content += Environment.NewLine;
+            }));
         }
 
         public bool CompareClick { get; set; }
@@ -44,15 +58,6 @@ namespace ProjectUser
                     CompareClick = value;
                     OnPropertyChanged("ClickCheck");
                 }
-            }
-        }
-
-        public void Receive<T>(T arg) where T : EventArgs
-        {
-            var casted = arg as SomeUniqueEvent;
-            if (casted != null)
-            {
-                ClickCheck = casted.Clicked;
             }
         }
 

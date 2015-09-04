@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -94,9 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LinkProject\LinkProject.csproj">
-      <Project>{25f82d74-1f32-49eb-b42c-41dab95d345c}</Project>
-      <Name>LinkProject</Name>
+    <ProjectReference Include="..\PipeLink\PipeLink.csproj">
+      <Project>{9df9196c-da3c-4d54-9101-de94e2502acd}</Project>
+      <Name>PipeLink</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

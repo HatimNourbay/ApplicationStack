@@ -10,7 +10,17 @@ namespace LinkProject
     {
         static void Main(string[] args)
         {
-            Console.ReadLine();
+            int messages = 0; 
+            try
+            {
+                PipeLink.Sender.SendMessage(messages);
+                Console.ReadLine();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+                Console.ReadLine();
+            }
         }
     }
 }

@@ -13,3 +13,5 @@ C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\P
 C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\ProjectUser\bin\Debug\LinkProject.pdb
 C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\ProjectUser\obj\Debug\ProjectUser.exe
 C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\ProjectUser\obj\Debug\ProjectUser.pdb
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\ProjectUser\bin\Debug\PipeLink.dll
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\ProjectUser\bin\Debug\PipeLink.pdb

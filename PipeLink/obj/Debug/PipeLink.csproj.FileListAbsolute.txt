@@ -1,0 +1,6 @@
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\PipeLink\bin\Debug\PipeLink.dll.config
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\PipeLink\bin\Debug\PipeLink.dll
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\PipeLink\bin\Debug\PipeLink.pdb
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\PipeLink\obj\Debug\PipeLink.csprojResolveAssemblyReference.cache
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\PipeLink\obj\Debug\PipeLink.dll
+C:\Users\Jean Constanty\Documents\Visual Studio 2013\Projects\ApplicationStack\PipeLink\obj\Debug\PipeLink.pdb

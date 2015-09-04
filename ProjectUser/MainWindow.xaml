@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label Content="{Binding ClickCheck}" HorizontalAlignment="Left" Margin="240,132,0,0" VerticalAlignment="Top"/>
+        <Label Name="label1" Content="" HorizontalAlignment="Left" Margin="240,132,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

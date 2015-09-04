@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace ApplicationStack
     /// </summary>
     public partial class MainWindow : Window
     {
+        int i;
         public MainWindow()
         {
              try { InitializeComponent(); }
@@ -27,17 +29,30 @@ namespace ApplicationStack
             {
                 Console.WriteLine(e.InnerException);
             }
+             i = 0;
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            LinkProject.EventTunnel.Publish(new LinkProject.SomeUniqueEvent(true));
-        }
+            int messages;
 
-        private void button1_MouseLeave(object sender, MouseEventArgs e)
-        {
-            LinkProject.EventTunnel.Publish(new LinkProject.SomeUniqueEvent(false));
+            i++;
+
+            Stopwatch stoop = new Stopwatch();
+            stoop.Start();
+            messages = i;
+            try
+            {
+                PipeLink.Sender.SendMessage(messages);
+                stoop.Stop();
+                Console.WriteLine(stoop.ElapsedMilliseconds + " ms");
+
+            }
+            catch (Exception u)
+            {
+                Console.WriteLine(u);
+            }
         }
     }
 }
